@@ -1,7 +1,7 @@
 ---
 title: "Science Communication"
 description: |
-  *Science Communication* ([73168-01](https://vorlesungsverzeichnis.unibas.ch/de/vorlesungsverzeichnis?id=293356)), HS25, University of Basel
+  *Science Communication* ([73168-01](https://vorlesungsverzeichnis.unibas.ch/de/vorlesungsverzeichnis?id=301652)), HS25, University of Basel
   
   Instructors: [Darjan Hil](https://www.superdot.studio/darjan-hil-en), [Nicole Lachenmeier](https://www.superdot.studio/nicole-lachenmeier-de), and [Rui Mata](https://psychologie.unibas.ch/de/personen/rui-mata/about-me/)
   
@@ -30,19 +30,18 @@ Sessions take place Thursdays, 8.15-9.45, Biozentrum, Hörsaal U1.131.
 ::: l-body
 | # | Date     | Topic                         | Instructor(s) | Material | Exercise |
 |---| ---------|-------------------------------|--------| --------| --------|
-| 1 | 18.09.2025 | What is science communication? | Mata | [pdf](presentations/SCICOM_session1.pdf) | |
-| 2 | 25.09.2025 | Models and elements of science communication | Mata | [pdf](presentations/SCICOM_session2.pdf) | |
-| 3 | 09.10.2025 | Scientific uncertainty and trust in science | Mata | [pdf](presentations/SCICOM_session3.pdf) | |
-| 4 | 16.10.2025 | Guidelines for science communication | Mata | [pdf](presentations/SCICOM_session4.pdf) | |
-| 5 | 23.10.2025 | Science communication gone wrong | Mata | [pdf](presentations/SCICOM_session5.pdf)  |  |
-| 6 | 30.10.2025 | Why do we visualize? | Hil/Lachenmeier | [pdf](presentations/SCICOM_session6.pdf) | A |
-| 7 | 06.11.2025 | Structured content | Hil/Lachenmeier | [pdf](presentations/SCICOM_session7.pdf)|  |
-| 8 | 13.11.2025 | Content dimensions and categorization [Part1](https://streamyard.com/e/5wgav7ecfyr2) [Part2](https://streamyard.com/e/iij89npgp5jk) | Hil/Lachenmeier | [pdf](presentations/SCICOM_session8.pdf)| B |
-| 9 | 20.11.2025 | Networks and relationships | Hil/Lachenmeier |[pdf](presentations/SCICOM_session9.pdf) | C |
-|10 | 27.11.2025 | The identity of a dot | Hil/Lachenmeier | [pdf](presentations/SCICOM_session10.pdf)| D |
-|11 | 04.12.2025 | Visual language and cultural context | Hil/Lachenmeier | [pdf](presentations/SCICOM_session11.pdf) | E |
-|12 | 11.12.2025 | Areas and hierachies | Hil/Lachenmeier | [pdf](presentations/SCICOM_session12.pdf) |  |
-|13 | 18.12.2025 | [Exam](exam.html) | | [info](presentations/exam_info.pdf)|
+| 1 | 17.09.2026 | What is science communication? | Mata | [pdf](index.html) | |
+| 2 | 08.10.2026 | Models and elements of science communication | Mata | [pdf](index.html) | |
+| 3 | 15.10.2026 | Scientific uncertainty and trust in science | Mata | [pdf](index.html) | |
+| 4 | 22.10.2026 | Guidelines for science communication | Mata | [pdf](index.html) | |
+| 5 | 29.10.2026 | Science communication gone wrong | Mata | [pdf](index.html)  |  |
+| 6 | 05.11.2026 | Why do we visualize? | Hil/Lachenmeier | [pdf](index.html) | A |
+| 7 | 12.11.2026 | Structured content | Hil/Lachenmeier | [pdf](index.html)|  |
+| 8 | 19.11.2026 | Content dimensions and categorization [pdf](index.html)| B |
+| 9 | 26.11.2026 | Networks and relationships | Hil/Lachenmeier |[pdf](index.html) | C |
+|10 | 03.12.2026 | The identity of a dot | Hil/Lachenmeier | [pdf](index.html)| D |
+|11 | 10.12.2026 | Visual language and cultural context & Areas and hierachies ???? | Hil/Lachenmeier | [pdf](index.html) | E |
+|12 | 17.12.2026 | [Exam](exam.html) | | |
 :::
 
 # Course description and learning goals
