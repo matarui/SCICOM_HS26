@@ -1,0 +1,16 @@
+name: "SCICOM"
+title: "SCICOM"
+description: |
+  SCICOM
+output_dir: "docs"
+navbar:
+  logo:
+    image: photos/unibas.png
+    href: https://cds.unibas.ch
+  right:
+    - text: "Home"
+      href: index.html
+      search: true
+output:
+  distill::distill_article:
+    toc: true
