@@ -34,16 +34,32 @@ Sessions take place Thursdays, 8.15-9.45, Biozentrum, Hörsaal U1.131.
 | 2 | 08.10.2026 | Models and elements of science communication | Mata | [pdf](index.html) | |
 | 3 | 15.10.2026 | Scientific uncertainty and trust in science | Mata | [pdf](index.html) | |
 | 4 | 22.10.2026 | Guidelines for science communication | Mata | [pdf](index.html) | |
-| 5 | 29.10.2026 | Science communication gone wrong | Mata | [pdf](index.html)  |  |
+| 5 | 29.10.2026 | Science communication in practice | Mata | [pdf](index.html)  |  |
 | 6 | 05.11.2026 | Why do we visualize? | Hil/Lachenmeier | [pdf](index.html) | A |
 | 7 | 12.11.2026 | Structured content | Hil/Lachenmeier | [pdf](index.html)|  |
-| 8 | 19.11.2026 | Content dimensions and categorization [pdf](index.html)| B |
+| 8 | 19.11.2026 | Content dimensions and categorization | Hil/Lachenmeier | [pdf](index.html)| B |
 | 9 | 26.11.2026 | Networks and relationships | Hil/Lachenmeier |[pdf](index.html) | C |
 |10 | 03.12.2026 | The identity of a dot | Hil/Lachenmeier | [pdf](index.html)| D |
 |11 | 10.12.2026 | Visual language and cultural context & Areas and hierachies ???? | Hil/Lachenmeier | [pdf](index.html) | E |
 |12 | 17.12.2026 | [Exam](exam.html) | | |
 :::
 
+<!-- ::: -->
+<!-- | # | Date     | Topic                         | Instructor(s) | Material | Exercise | -->
+<!-- |---| ---------|-------------------------------|--------| --------| --------| -->
+<!-- | 1 | 17.09.2026 | What is science communication? | Mata | [pdf](index.html) | | -->
+<!-- | 2 | 08.10.2026 | Models and elements of science communication | Mata | [pdf](index.html) | | -->
+<!-- | 3 | 15.10.2026 | Scientific uncertainty and trust in science | Mata | [pdf](index.html) | | -->
+<!-- | 4 | 22.10.2026 | Guidelines for science communication | Mata | [pdf](index.html) | | -->
+<!-- | 5 | 29.10.2026 | Why do we visualize? |  Hil/Lachenmeier | [pdf](index.html)  |  | -->
+<!-- | 6 | 05.11.2026 | Structured content | Hil/Lachenmeier | [pdf](index.html) | A | -->
+<!-- | 7 | 12.11.2026 | Content dimensions and categorization  | Hil/Lachenmeier | [pdf](index.html)|  | -->
+<!-- | 8 | 19.11.2026 | Networks and relationships [pdf](index.html)| B | -->
+<!-- | 9 | 26.11.2026 | The identity of a dot | Hil/Lachenmeier |[pdf](index.html) | C | -->
+<!-- |10 | 03.12.2026 | Visual language and cultural context & Areas and hierachies ???? | Hil/Lachenmeier | [pdf](index.html)| D | -->
+<!-- |11 | 10.12.2026 | Science Communication Fair | | | E | -->
+<!-- |12 | 17.12.2026 | [Exam](exam.html) | | | -->
+<!-- ::: -->
 # Course description and learning goals
 
 This course aims to give a broad introduction to science communication. By completing the course you can expect to... 
