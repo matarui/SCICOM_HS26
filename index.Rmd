@@ -35,31 +35,15 @@ Sessions take place Thursdays, 8.15-9.45, Biozentrum, Hörsaal U1.131.
 | 3 | 15.10.2026 | Scientific uncertainty and trust in science | Mata | [pdf](index.html) | |
 | 4 | 22.10.2026 | Guidelines for science communication | Mata | [pdf](index.html) | |
 | 5 | 29.10.2026 | Science communication in practice | Mata | [pdf](index.html)  |  |
-| 6 | 05.11.2026 | Why do we visualize? | Hil/Lachenmeier | [pdf](index.html) | A |
-| 7 | 12.11.2026 | Structured content | Hil/Lachenmeier | [pdf](index.html)|  |
-| 8 | 19.11.2026 | Content dimensions and categorization | Hil/Lachenmeier | [pdf](index.html)| B |
-| 9 | 26.11.2026 | Networks and relationships | Hil/Lachenmeier |[pdf](index.html) | C |
-|10 | 03.12.2026 | The identity of a dot | Hil/Lachenmeier | [pdf](index.html)| D |
-|11 | 10.12.2026 | Visual language and cultural context & Areas and hierachies ???? | Hil/Lachenmeier | [pdf](index.html) | E |
+| 6 | 05.11.2026 | Why do we visualize? | Hil/Lachenmeier | | |
+| 7 | 12.11.2026 | Structured content | Hil/Lachenmeier | | A |
+| 8 | 19.11.2026 | Content dimensions and categorization | Hil/Lachenmeier | | B |
+| 9 | 26.11.2026 | The identity of a dot | Hil/Lachenmeier | | C |
+|10 | 03.12.2026 | Networks and relationships | Hil/Lachenmeier | | D |
+|11 | 10.12.2026 | Visual language and cultural context & Areas and hierachies | Hil/Lachenmeier | | E |
 |12 | 17.12.2026 | [Exam](exam.html) | | |
 :::
 
-<!-- ::: -->
-<!-- | # | Date     | Topic                         | Instructor(s) | Material | Exercise | -->
-<!-- |---| ---------|-------------------------------|--------| --------| --------| -->
-<!-- | 1 | 17.09.2026 | What is science communication? | Mata | [pdf](index.html) | | -->
-<!-- | 2 | 08.10.2026 | Models and elements of science communication | Mata | [pdf](index.html) | | -->
-<!-- | 3 | 15.10.2026 | Scientific uncertainty and trust in science | Mata | [pdf](index.html) | | -->
-<!-- | 4 | 22.10.2026 | Guidelines for science communication | Mata | [pdf](index.html) | | -->
-<!-- | 5 | 29.10.2026 | Why do we visualize? |  Hil/Lachenmeier | [pdf](index.html)  |  | -->
-<!-- | 6 | 05.11.2026 | Structured content | Hil/Lachenmeier | [pdf](index.html) | A | -->
-<!-- | 7 | 12.11.2026 | Content dimensions and categorization  | Hil/Lachenmeier | [pdf](index.html)|  | -->
-<!-- | 8 | 19.11.2026 | Networks and relationships [pdf](index.html)| B | -->
-<!-- | 9 | 26.11.2026 | The identity of a dot | Hil/Lachenmeier |[pdf](index.html) | C | -->
-<!-- |10 | 03.12.2026 | Visual language and cultural context & Areas and hierachies ???? | Hil/Lachenmeier | [pdf](index.html)| D | -->
-<!-- |11 | 10.12.2026 | Science Communication Fair | | | E | -->
-<!-- |12 | 17.12.2026 | [Exam](exam.html) | | | -->
-<!-- ::: -->
 # Course description and learning goals
 
 This course aims to give a broad introduction to science communication. By completing the course you can expect to... 
@@ -67,6 +51,7 @@ This course aims to give a broad introduction to science communication. By compl
 - Get an overview of theories and principles of science communication
 - Learn to critically evaluate and reflect on science communication
 - Learn to develop visual communication strategies for different audiences and purposes
+- Apply these principles hands-on, over the whole semester, to a real Swiss popular vote that you choose and follow from start to finish
 
 
 This website is designed to help course participants get an overview of the course and the course slides (slides will be uploaded shortly after each session). Additionally, a [FORUM](https://adam.unibas.ch/goto_adam_crs_1995734.html) is available on ADAM.  
@@ -85,21 +70,7 @@ Practical exercises will apply the principles learned in class to hands-on tasks
 
 *Exercises A-E (5 assignments, 9% each)*
 
-During each session, you will complete a mini warm-up task involving manual drawing (materials will be provided), which you will be able to use for your homework assignment. The goal is to develop an understanding of visualization principles through active creation and to learn how to critically evaluate visualizations. "Drawing by hand is thinking" is an approach that combines creative and analytical thinking: By drawing manually, you can develop a deeper understanding that is independent of digital tools and applicable in studies, research, and practice. For each of the 5 exercise assignments, you will have 6 days to submit the homework assignment (see ADAM for the specific deadlines). Please make sure to scan your drawings [well](photos/good_scan.jpg) and submit them as a JPEG or PNG file. [Poorly scanned](photos/bad_scan.jpg) sketches or PDF files will not be accepted.
-
-
-<!-- *Exercise A (11%)* -->
-
-<!-- This exercise involves a brief reflection task. You will be asked to critically assess an example of science communication of your choice (e.g., a news article, blog post, video, podcast, etc.) based on what you learned in the course. Your reflection, which should not exceed 300 words, should address the following: -->
-<!-- What is the main message of the communication? -->
-<!-- Who is the target audience? -->
-<!-- What are the strengths and weaknesses? -->
-<!-- How could it be improved? -->
-<!-- Submit your reflection including a link to the example of your choice through ADAM by **31. Oct 2025, 23:59**. -->
-
-<!-- *Exercises A-G (6 exercises, 10% each)* -->
-
-<!-- During each session, you will complete a task involving manual drawing (materials will be provided), followed by a brief homework assignment. The goal is to develop an understanding of visualization principles through active creation and to learn how to critically evaluate visualizations. "Drawing by hand is thinking" is an approach that combines creative and analytical thinking: By drawing manually, you can develop a deeper understanding that is independent of digital tools and applicable in studies, research, and practice. For each session, you will have 12 hours to upload the in-class task (in case you have to miss the session and cannot do it in class) and 6 days to submit the homework assignment. Submit your drawings as a JPEG or PNG file. -->
+Starting in Session 6, you will choose one completed Swiss popular initiative (Volksinitiative) with available campaign poster material and follow it through all five exercises. You are welcome to use AI to research and prepare your data — but every visualization must be drawn by hand, so that you experience the process yourself and can reflect on the decisions you made. "Drawing by hand is thinking" is an approach that combines creative and analytical thinking: by drawing manually, you develop a deeper understanding that is independent of digital tools and applicable in studies, research, and practice. For each of the 5 exercise assignments, you will have until the following session to submit your work (see ADAM for the specific deadlines). Please make sure to scan your drawings [well](photos/good_scan.jpg) and submit them as a JPEG or PNG file. [Poorly scanned](photos/bad_scan.jpg) sketches or PDF files will not be accepted.
 
 # Recommended readings
 

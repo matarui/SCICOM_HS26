@@ -3,6 +3,7 @@ title: "SCICOM"
 description: |
   SCICOM
 output_dir: "docs"
+theme: theme.css
 navbar:
   logo:
     image: photos/unibas.png
