@@ -1,0 +1,172 @@
+---
+pagetitle: "Wissenschaftsbarometer"
+output:
+  html_document:
+    css: wsb/www/styles.css
+    df_print: kable
+    toc: false
+    fig_width: 7
+    fig_height: 7
+params:
+  # Adresse der Antworttabelle: normale Tabellen-URL, blosse Tabellen-ID oder
+  # "Im Web veröffentlichen"-CSV-Adresse. Leer = Beispieldaten.
+  sheet_csv: "https://docs.google.com/spreadsheets/d/12i9jqVvwHHfzD6-_iP8mZNHgpufka2ZNF3FI5d23JPQ/edit"
+  sheet_gid: "1092973725"          # Registerblatt; leer = aus der Adresse bzw. das erste
+  course: "SCICOM, Universität Basel"   # <- Titel der Vorlesung eintragen
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE,
+                      fig.align = "center", dev = "png", dpi = 150,
+                      dev.args = list(bg = "#F5F5F5"))
+source("wsb/R/fonts.R")
+wsb_setup_fonts(dir = "wsb/www/fonts", dpi = 150)  # dpi = Chunkoption oben
+source("wsb/R/radar.R")
+source("wsb/R/data.R")
+
+items <- read.csv("wsb/data/items.csv", stringsAsFactors = FALSE,
+                  fileEncoding = "UTF-8")
+ref   <- read.csv("wsb/data/barometer_reference.csv", stringsAsFactors = FALSE,
+                  fileEncoding = "UTF-8")
+
+codes <- items$code                       # A ... F
+ref_total <- setNames(as.numeric(unlist(ref[ref$group == "Gesamt", codes])), codes)
+```
+
+```{r read-data}
+## ---- Antworten live aus der Google-Tabelle lesen (siehe wsb/R/data.R) ----
+src_info <- wsb_read_responses(params$sheet_csv, gid = params$sheet_gid,
+                               fallback = "wsb/data/student_responses_example.csv")
+resp <- src_info$data
+used_fallback <- src_info$fallback
+
+## ---- Formularspalten den sechs Items zuordnen ----------------------------
+find_col <- function(keyword, nms) {
+  hit <- grep(keyword, nms, ignore.case = TRUE, fixed = FALSE)
+  if (length(hit) == 0)
+    stop("Keine Spalte passt zu '", keyword, "'. Gefundene Spalten: ",
+         paste(nms, collapse = " | "))
+  hit[1]
+}
+cols <- vapply(items$keyword, find_col, integer(1), nms = names(resp))
+
+to_numeric <- function(x) {
+  if (is.numeric(x)) return(as.numeric(x))
+  x <- as.character(x)
+  pos <- regexpr("[1-5]", x)
+  out <- rep(NA_real_, length(x))
+  out[pos > 0] <- as.numeric(regmatches(x, pos))
+  out
+}
+
+dat <- as.data.frame(lapply(resp[cols], to_numeric))
+names(dat) <- codes
+dat <- dat[rowSums(!is.na(dat)) > 0, , drop = FALSE]   # leere Zeilen weg
+
+n_students  <- nrow(dat)
+course_mean <- round(colMeans(dat, na.rm = TRUE), 1)
+course_sd   <- round(apply(dat, 2, sd, na.rm = TRUE), 1)
+```
+
+::::: {.wsb}
+
+<p class="wsb-title">SCICOM</p>
+<p class="wsb-subtitle">im Vergleich zur CH Wissenschaftsbarometer 2025</p>
+
+```{r banner, results='asis'}
+if (used_fallback)
+  cat("<div class='wsb-note'><b>Demo-Daten.</b> ",
+      "Es werden simulierte Antworten gezeigt – setze ",
+      "<code>params$sheet_csv</code> im YAML-Kopf auf die Adresse der ",
+      "Antworttabelle.<br><small>", src_info$message, "</small></div>",
+      sep = "")
+
+cat("<div class='wsb-meta'>", params$course, " &middot; ",
+    n_students, " Antworten &middot; Stand ",
+    format(Sys.time(), "%d.%m.%Y, %H:%M"), "</div>", sep = "")
+```
+
+## Wie sollte das Verhältnis von Wissenschaft, Politik und Öffentlichkeit aussehen?
+
+Sechs Aussagen, beantwortet auf einer Skala von **1 = stimme überhaupt nicht zu**
+bis **5 = stimme voll und ganz zu**. 
+
+```{r legend-table}
+tab <- data.frame(
+  Item = codes,
+  Aussage = items$text_de,
+  `Schweiz` = as.numeric(ref_total),
+  `SCICOM` = as.numeric(course_mean),
+  `SD` = as.numeric(course_sd),
+  `Differenz` = round(as.numeric(course_mean) - as.numeric(ref_total), 1),
+  check.names = FALSE
+)
+knitr::kable(tab, row.names = FALSE,
+             caption = "Mittelwerte: Schweizer Bevölkerung vs. SCICOM")
+```
+
+
+```{r radar-main, fig.width=7.5, fig.height=7.5}
+radar_plot(
+  series = setNames(list(ref_total, course_mean),
+                    c("Schweiz (Gesamt)", "SCICOM")),
+  labels = codes,
+  title  = NULL
+)
+```
+
+::: {.wsb-num}
+
+
+:::
+
+```{r takeaway, results='asis', include=FALSE}
+d <- tab$Differenz
+i <- which.max(abs(d))
+richtung <- if (d[i] > 0) "höher" else "tiefer"
+cat("**Grösster Unterschied:** Item ", codes[i], " (*", items$short_de[i],
+    "*) – unser Kurs liegt ", abs(d[i]), " Skalenpunkte ", richtung,
+    " als die Schweizer Bevölkerung.\n\n", sep = "")
+```
+
+## Verteilung der Antworten
+
+```{r distributions, fig.width=9, fig.height=5.5}
+counts <- t(sapply(dat, function(x) table(factor(x, levels = 1:5))))
+colnames(counts) <- c("1", "2", "3", "4", "5")
+response_bars(counts,
+              labels = paste0(codes, ": ", items$short_de),
+              title = NULL)
+```
+
+## Vergleich mit den Parteianhängerschaften
+
+```{r party-panels, fig.width=9.5, fig.height=6.5}
+op <- par(mfrow = c(2, 3), oma = c(0, 0, 0, 0))
+for (g in ref$group) {
+  v <- setNames(as.numeric(unlist(ref[ref$group == g, codes])), codes)
+  lab <- if (g == "Gesamt") "Gesamt" else paste0(g, " / ", ref$group_fr[ref$group == g])
+  radar_plot(list(v, course_mean), labels = codes, title = lab,
+             value_labels = FALSE, legend_pos = NULL, lwd = 2)
+}
+par(op)
+```
+
+Rot: die jeweilige Anhängerschaft laut Wissenschaftsbarometer; blau: SCICOM
+(in allen sechs Panels identisch).
+
+## Die Aussagen im Wortlaut
+
+```{r items-table}
+knitr::kable(items[, c("code", "text_de", "text_en")],
+             col.names = c("Item", "Deutsch", "English"), row.names = FALSE)
+```
+
+---
+
+<small>Referenzwerte: Wissenschaftsbarometer Schweiz, „Wie sollte das Verhältnis
+von Wissenschaft, Politik und Öffentlichkeit aussehen?". https://wissenschaftsbarometer.ch/ergebnisse-2025/</small>
+
+<small>Produced with the help of Claude Code · `r format(Sys.Date(), "%d.%m.%Y")`</small>
+
+:::::

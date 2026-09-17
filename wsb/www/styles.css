@@ -1,0 +1,193 @@
+/* ------------------------------------------------------------------
+   Wissenschaftsbarometer — Gestaltung einer EINZELNEN Seite.
+
+   Alle Regeln hängen an `.wsb`: der Rest der Website (Navbar, Theme,
+   andere Seiten) bleibt unberührt. Der Seiteninhalt steht deshalb im
+   Rmd in einem Fenced Div  ::: {.wsb}  ...  :::
+
+   Schriften: TeX Gyre Heros / Heros Cn (Helvetica-Klon, GUST Font
+   License), lokal eingebunden — keine Anfrage an Google Fonts.
+   ------------------------------------------------------------------ */
+
+@font-face {
+  font-family: "WSB Sans";
+  src: url("fonts/texgyreheros-regular.woff") format("woff");
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "WSB Sans";
+  src: url("fonts/texgyreheros-bold.woff") format("woff");
+  font-weight: 700; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "WSB Sans Cn";
+  src: url("fonts/texgyreheroscn-regular.woff") format("woff");
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "WSB Sans Cn";
+  src: url("fonts/texgyreheroscn-bold.woff") format("woff");
+  font-weight: 700; font-style: normal; font-display: swap;
+}
+
+.wsb {
+  --red:   #E2001A;
+  --ink:   #111111;
+  --grey:  #6B6B6B;
+  --rule:  #D8D8D8;
+  --panel: #F5F5F5;
+  --sans:  "WSB Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --cond:  "WSB Sans Cn", "Helvetica Neue Condensed", "Arial Narrow",
+           "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  font-family: var(--sans);
+  font-size: 17px;
+  color: var(--ink);
+  line-height: 1.55;
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 1.5rem 0 4rem;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* --- Kopf der Seite ----------------------------------------------- */
+
+.wsb .wsb-title,
+.wsb .wsb-subtitle {
+  font-family: var(--cond);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 3rem;
+  line-height: 0.98;
+  letter-spacing: -0.005em;
+  margin: 0 0 .5rem;
+  max-width: 18em;
+}
+.wsb .wsb-subtitle { color: var(--red); margin-bottom: 2rem; }
+
+.wsb h1, .wsb h2, .wsb h3, .wsb h4 {
+  font-family: var(--cond);
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: 0;
+  color: var(--ink);
+}
+.wsb h1 { font-size: 2.2rem; margin: 3rem 0 1rem; }
+.wsb h2 {
+  font-size: 1.85rem;
+  text-transform: uppercase;
+  margin: 3.2rem 0 1rem;
+  padding-top: .9rem;
+  border-top: 3px solid var(--ink);
+}
+.wsb h3 { font-size: 1.3rem; margin: 2.2rem 0 .6rem; color: var(--red); }
+.wsb h4 { font-size: 1.05rem; margin: 1.6rem 0 .4rem; text-transform: uppercase;
+          letter-spacing: .04em; color: var(--grey); }
+
+.wsb p { margin: 0 0 1.1rem; }
+.wsb strong { font-weight: 700; }
+.wsb a { color: var(--red); text-decoration: none;
+         border-bottom: 1px solid rgba(226,0,26,.35); }
+.wsb a:hover { border-bottom-color: var(--red); }
+.wsb code { font-size: .92em; background: var(--panel); padding: .05em .3em; }
+
+/* --- Grafiken ------------------------------------------------------ */
+
+.wsb img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1.8rem auto;
+  background: var(--panel);
+}
+
+/* --- Tabellen ------------------------------------------------------ */
+
+.wsb table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.6rem 0 2rem;
+  font-size: .92rem;
+  font-variant-numeric: tabular-nums;
+  background: none;
+}
+.wsb caption {
+  font-family: var(--cond);
+  text-transform: uppercase;
+  letter-spacing: .03em;
+  font-size: .85rem;
+  color: var(--grey);
+  text-align: left;
+  padding-bottom: .5rem;
+}
+.wsb thead th {
+  font-family: var(--cond);
+  text-transform: uppercase;
+  letter-spacing: .02em;
+  font-size: .85rem;
+  text-align: left;
+  border-bottom: 2px solid var(--ink);
+  border-top: 0;
+  padding: .45rem .6rem .45rem 0;
+  white-space: nowrap;
+}
+.wsb tbody td {
+  border-bottom: 1px solid var(--rule);
+  border-top: 0;
+  padding: .45rem .6rem .45rem 0;
+  vertical-align: top;
+}
+.wsb tbody tr:hover td { background: #FCFCFC; }
+.wsb td:first-child, .wsb th:first-child {
+  font-family: var(--cond);
+  font-weight: 700;
+}
+
+/* Pandoc setzt Spaltenbreiten per <col style="width:...">; wir steuern sie. */
+.wsb table col { width: auto !important; }
+
+/* Zahlentabellen: Zahlenspalten schmal und rechtsbündig */
+.wsb .wsb-num tbody td:nth-child(n+3),
+.wsb .wsb-num thead th:nth-child(n+3) {
+  text-align: right;
+  width: 1%;
+  white-space: nowrap;
+  padding-left: 1.2rem;
+}
+.wsb .wsb-num tbody td:nth-child(2) { width: auto; }
+.wsb .wsb-num tbody td:first-child,
+.wsb .wsb-num thead th:first-child { width: 1%; }
+
+/* --- Hinweisbox, Kopfzeile, Fuss ----------------------------------- */
+
+.wsb .wsb-note {
+  border-left: 4px solid var(--red);
+  background: var(--panel);
+  padding: .9rem 1.1rem;
+  margin: 0 0 1.8rem;
+  font-size: .95rem;
+}
+.wsb .wsb-meta {
+  font-family: var(--cond);
+  text-transform: uppercase;
+  letter-spacing: .03em;
+  font-size: .9rem;
+  color: var(--grey);
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 1.2rem;
+  margin-bottom: 2rem;
+}
+.wsb hr { border: 0; border-top: 3px solid var(--ink); margin: 3rem 0 1.5rem; }
+.wsb small { color: var(--grey); font-size: .85rem; }
+
+@media (max-width: 640px) {
+  .wsb { font-size: 16px; padding: 1rem 0 2.5rem; }
+  .wsb .wsb-title, .wsb .wsb-subtitle { font-size: 2.1rem; }
+  .wsb h2 { font-size: 1.5rem; }
+}
+
+@media print {
+  .wsb { max-width: none; }
+  .wsb h2 { break-before: page; }
+}
