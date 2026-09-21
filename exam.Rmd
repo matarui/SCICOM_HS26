@@ -12,6 +12,6 @@ knitr::opts_chunk$set(echo = FALSE)
 
 # Assessment
 
-You can find information about the location and time of the exam in the [course directory](https://vorlesungsverzeichnis.unibas.ch/de/vorlesungsverzeichnis?id=293356). 
+You can find information about the location and time of the exam in the [course directory](https://vorlesungsverzeichnis.unibas.ch/de/vorlesungsverzeichnis?id=301652). 
 
 The exam will consist of ca. 20 multiple-choice questions. The majority of questions will cover content from the first part of the course (sessions 1-5), while a smaller portion (ca. 10%) will focus on content from the second part of the course (sessions 6-11). 
