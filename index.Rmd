@@ -33,7 +33,7 @@ Sessions take place Thursdays, 8.15-9.45, Biozentrum, Hörsaal U1.131.
 | 1 | 17.09.2026 | What is science communication? | Mata | [pdf](presentations/SCICOM_session1.pdf) | |
 | 2 | 08.10.2026 | Models and elements of science communication | Mata | [pdf](presentations/SCICOM_session2.pdf) | |
 | 3 | 15.10.2026 | Scientific uncertainty and trust in science | Mata | [pdf](presentations/SCICOM_session3.pdf) | |
-| 4 | 22.10.2026 | Guidelines for science communication | Mata | [pdf](index.html) | |
+| 4 | 22.10.2026 | Guidelines for science communication | Mata | [pdf](presentations/SCICOM_session4.pdf) | |
 | 5 | 29.10.2026 | Science communication in practice | Mata | [pdf](index.html)  |  |
 | 6 | 05.11.2026 | Why do we visualize? | Hil/Lachenmeier | | |
 | 7 | 12.11.2026 | Structured content | Hil/Lachenmeier | | A |
