@@ -35,7 +35,7 @@ Sessions take place Thursdays, 8.15-9.45, Biozentrum, Hörsaal U1.131.
 | 3 | 15.10.2026 | Scientific uncertainty and trust in science | Mata | [pdf](presentations/SCICOM_session3.pdf) | |
 | 4 | 22.10.2026 | Guidelines for science communication | Mata | [pdf](presentations/SCICOM_session4.pdf) | |
 | 5 | 29.10.2026 | Science communication in practice | Mata | [pdf](presentations/SCICOM_session5.pdf)  |  |
-| 6 | 05.11.2026 | Why do we visualize? | Hil/Lachenmeier | | |
+| 6 | 05.11.2026 | Why do we visualize? | Hil/Lachenmeier | [pdf](presentations/SCICOM_session6.pdf)  | |
 | 7 | 12.11.2026 | Structured content | Hil/Lachenmeier | | A |
 | 8 | 19.11.2026 | Content dimensions and categorization | Hil/Lachenmeier | | B |
 | 9 | 26.11.2026 | The identity of a dot | Hil/Lachenmeier | | C |
